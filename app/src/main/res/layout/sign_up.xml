@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    tools:context=".Login"
+    android:background="@drawable/images">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:textSize="30dp"
+        android:textColor="#000000">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tv1"
+        android:text="Email"
+        android:textSize="30dp"
+        android:textColor="#000000">
+    </TextView>
+
+    <EditText
+        android:id="@+id/EdtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEmail"
+        android:layout_marginTop="10dp"
+        android:hint="email"
+        >
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EdtEmail"
+        android:layout_marginTop="20dp"
+        android:text="Password"
+        android:textSize="30dp"
+        android:textColor="#000000">
+    </TextView>
+
+    <EditText
+        android:id="@+id/EdtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPass"
+        android:layout_marginTop="10dp"
+        android:hint="email"
+        android:inputType="textPassword"
+        >
+    </EditText>
+
+    <Button
+        android:id="@+id/SignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="25dp"
+        android:layout_below="@+id/EdtPass"
+        android:layout_marginTop="30dp"
+        android:background="#E91E63"
+        android:textColor="#000000"
+        ></Button>
+
+    <TextView
+        android:id="@+id/tvForgotPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SignIn"
+        android:text="Forgot Password"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvForgotPass"
+        android:text="-------- OR --------"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="#000000">
+    </TextView>
+
+    <Button
+        android:id="@+id/google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="10dp"
+        android:text="Google"
+        android:textSize="25dp"
+        android:textColor="#FFFFFFFF"
+        android:background="#FFFF0000"
+    >
+    </Button>
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/google"
+        android:layout_marginTop="10dp"
+        android:text="Facebook"
+        android:textSize="25dp"
+        android:textColor="#FFFFFFFF"
+        android:background="#FF0000FF"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/SinUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/facebook"
+        android:layout_marginTop="10dp"
+        android:text="Sign Up"
+        android:textSize="25dp"
+        android:textColor="#FFFFFFFF"
+        android:background="#FF00FF00">
+    </Button>
+</RelativeLayout>
